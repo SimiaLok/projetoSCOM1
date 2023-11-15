@@ -1,0 +1,37 @@
+.poke_card {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+
+    &:hover {
+        &::after {
+            border: 6px solid #ffffff70;
+        }
+
+        img {
+            scale: 1.1
+        }
+
+    }
+
+    &::after {
+        content: '';
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 6px solid #ffffff40;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 300ms ease;
+    }
+}

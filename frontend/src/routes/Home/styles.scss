@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.night_mask {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    background-color: #030247;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#mapa-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+#mapa {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+    background-image: url('../../assets/kantomap.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#char {
+    position: absolute;
+    width: 40px; /* Ajuste o tamanho do personagem conforme necessário */
+    height: 40px;
+    background-image: url('../../assets/char.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+

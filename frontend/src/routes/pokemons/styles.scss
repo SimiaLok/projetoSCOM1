@@ -1,0 +1,35 @@
+.my_pokemons_section {
+    background: rgb(244,220,38);
+    background: -moz-linear-gradient(180deg, rgba(244,220,38,1) 0%, rgba(244,220,38,1) 35%, rgba(244,172,38,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(244,220,38,1) 0%, rgba(244,220,38,1) 35%, rgba(244,172,38,1) 100%);
+    background: linear-gradient(180deg, rgba(244,220,38,1) 0%, rgba(244,220,38,1) 35%, rgba(244,172,38,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4dc26",endColorstr="#f4ac26",GradientType=1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    #topbar {
+        margin-left: 30px;
+    }
+
+    .main_title_area {
+        .logo {
+            max-width: 400px;
+            margin-bottom: -30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+        .pokemons_container {
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+}
